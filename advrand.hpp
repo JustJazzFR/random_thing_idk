@@ -37,6 +37,7 @@ namespace advrand {
             '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+',
             '[', ']', '{', '}', ';', ':', ',', '.', '<', '>', '/', '?', '~', '`'
         };
+        //The randomizations dont modify the original string
         //randomize w/ lowercase alphabet
         std::string rnd_alph_l(std::string source, std::vector<char> alph_l) {
             static std::mt19937 rnd(std::random_device{}());
